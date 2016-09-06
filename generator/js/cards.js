@@ -203,6 +203,12 @@ function card_element_justify(params, card_data, options) {
     var result = "";
     result += '<div class="card-element card-description-line" style="text-align: justify; hyphens: auto">';
     result += '   <p class="card-p card-description-text">' + params[0] + '</p>';
+}
+
+function card_element_html(params, card_data, options) {
+    var result = "";
+    result += '<div class="card-element card-description-line">';
+    result += '   ' + params[0];
     result += '</div>';
     return result;
 }
@@ -283,6 +289,7 @@ var card_element_generators = {
     text: card_element_text,
     center: card_element_center,
     justify: card_element_justify,
+    html: card_element_html,
     bullet: card_element_bullet,
     fill: card_element_fill,
     section: card_element_section,
