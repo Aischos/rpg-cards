@@ -16,7 +16,9 @@ function card_default_options() {
         card_count: null,
         icon_inline: true,
         rounded_corners: true,
-        card_spacing: true
+        card_spacing: true,
+        icon_gradient: false,
+        rounded_corners: true
     };
 }
 
@@ -334,7 +336,11 @@ function card_generate_color_style(color, options) {
 }
 
 function card_generate_color_gradient_style(color, options) {
-    return 'style="background: radial-gradient(ellipse at center, white 20%, ' + color + ' 120%)"';
+    if(options.icon_gradient){
+        return 'style="background: radial-gradient(ellipse at center, white 20%, ' + color + ' 120%)"';
+    }else{
+        return 'style="background-color: white"';
+    }
 }
 
 function card_generate_front(data, options) {
