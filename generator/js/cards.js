@@ -116,6 +116,10 @@ function card_element_inline_icon(params, card_data, options) {
     var color = card_data_color_front(card_data, options);
     return '<div class="card-element card-inline-icon align-' + align + ' icon-' + icon + '" style ="height:' + size + 'px;min-height:' + size + 'px;width: ' + size + 'px;background-color: ' + color + '"></div>';
 }
+function card_element_source(params, card_data, options) {
+    var source = params[0] || "";
+    return '<div class="card-element card-source">' + source + '</div>';
+}
 
 function card_element_picture(params, card_data, options) {
     var url = params[0] || "";
@@ -269,6 +273,7 @@ function card_element_empty(params, card_data, options) {
 
 var card_element_generators = {
     subtitle: card_element_subtitle,
+    source: card_element_source,
     property: card_element_property,
     rule: card_element_ruler,
     ruler: card_element_ruler,
