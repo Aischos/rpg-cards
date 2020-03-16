@@ -3,16 +3,10 @@ rpg-cards
 
 RPG spell/item/monster card generator
 
-preview
-=======
-
-Click [here](https://crobi.github.io/rpg-cards/generator/generate.html) for a live preview of this generator.
-
 status of the project
 =====================
 
-I won't have time to work on this project in the forseeable future.
-PR's are still welcome, so feel free to implement new awesome features!
+This is a fork of crobi's original project, committing various QOL changes from either unmerged pull requests or various forks.
 
 FAQ
 =====================
